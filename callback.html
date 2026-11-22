@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>TsunaLink Callback</title>
+</head>
+<body>
+<h1>TsunaLink</h1>
+<p>Authorization code: <span id="code"></span></p>
+<p>You can close this page.</p>
+<script>
+const params = new URLSearchParams(window.location.search);
+document.getElementById('code').textContent = params.get('code') || '';
+</script>
+</body>
+</html>
